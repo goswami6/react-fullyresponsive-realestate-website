@@ -1,0 +1,131 @@
+.v-left{
+    position: relative;
+}
+.v-image-container{
+    /* position: relative; */
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    z-index: 1;
+    /* border-radius: 1rem ;
+    border: 8px solid rgba(232 232 232 / 93%); */
+    
+   
+    /* animation: changeImage 30s linear infinite; */
+    /* background-size: 100% 100%; */
+    /* box-shadow: 6px 6px 28px 2px rgba(0,0,0,0.6); */
+    
+}
+/* .v-image-container:nth-child(1){
+    
+} */
+.v-image-container>img{
+    /* width: 100%;
+    height: 100%; */
+    /* animation: changeImage 20s linear infinite; */
+
+}
+.one{
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    border: 4px solid rgba(232 232 232 / 93%);
+    display: flex;
+    /* justify-content: flex-start; */
+    top: -18rem;
+    border-radius: 1rem;
+    
+}
+.one:hover{
+    box-shadow: 6px 6px 28px 2px rgba(112, 149, 237, 0.6);
+    transform: scale(1.1);
+    z-index: 1;
+}
+.two{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: -2rem;
+    left: 30%;
+    border: 4px solid rgba(232 232 232 / 93%);
+    border-radius: 0.5rem;
+}
+.two:hover{
+    box-shadow: 6px 6px 28px 2px rgba(112, 149, 237, 0.6);
+    transform: scale(1.1);
+}
+.v-container>div{
+    flex: 1;
+}
+
+.v-right{
+    gap: 0.5rem;
+}
+.accordion{
+    margin-top: 2rem;
+    border: none;
+}
+.accordionItem{
+    background: white;
+    border: 0.8px solid rgba(128,128,128,0.145);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+.accordionItem:hover{
+    box-shadow: 6px 6px 28px 2px rgba(112, 149, 237, 0.6);
+}
+.accordionButton{
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.icon{
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
+}
+.icon svg{
+    fill: #001f54;
+}
+.accordionButton .primaryText{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+    .v-container{
+        flex-direction: column;
+        /* margin-top: 17rem; */
+        align-items: center;
+        justify-content: center;
+    }
+    .v-image-container{
+        width: 20rem;
+        height: 25rem;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 4px solid rgba(232 232 232 / 93%);
+        background: url(../../../public/images/v1.jpg);
+       
+        /* animation: changeImage 30s linear infinite; */
+        background-size: 100% 100%;
+        box-shadow: 6px 6px 28px 2px rgba(0,0,0,0.6);
+    }
+    .one{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+
+   
+}
+@media (max-width:768px) {
+    .accordionButton .primaryText {
+        font-size: 0.8rem;
+    }
+    
+}

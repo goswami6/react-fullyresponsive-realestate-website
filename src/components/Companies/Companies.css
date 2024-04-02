@@ -1,0 +1,9 @@
+.c-containers{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+.c-containers>img{
+    width: 9rem;
+}
